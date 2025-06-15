@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    :root {
+      --primary-color: deepskyblue;
+      --bg-color: #f4f9ff;
+      --white: #fff;
+      --dark: #222;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--primary-color);
+      background-color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 2px solid var(--primary-color);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h4 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    .project-card p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .contact-icons {
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      margin: 0 15px;
+      color: white;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: lightblue;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <img src="sanjana.jpg" alt="Your Photo" />
+      <h1>SANJANA KUNAGU</h1>
+      <p>Aspiring Web Developer | Coder | Innovator</p>
+    </div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section-card">
+    <h2>About Me</h2>
+    <p>I’m a tech enthusiast passionate about coding, problem solving, and building impactful web applications. My goal is to grow as a software developer and contribute to innovative projects.</p>
+  </section>
+
+  <section id="skills" class="section-card">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>C, Python, Java</li>
+      <li>DBMS, HTML, CSS, JavaScript</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Time Management</li>
+      <li>Teamwork, Smart Thinking</li>
+      <li>Quick Learner, Communication</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section-card">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>Portfolio Website</h4>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h4>College Committee Website</h4>
+        <p>Created a functional committee management system for college use.</p>
+      </div>
+      <div class="project-card">
+        <h4>Job Portal with Resume Builder</h4>
+        <p>Designed a job portal allowing resume uploads and smart filtering.</p>
+      </div>
+      <div class="project-card">
+        <h4>Telegram Chatbot (AI)</h4>
+        <p>Built a Python-based bot for answering user queries via Telegram.</p>
+      </div>
+      <div class="project-card">
+        <h4>Voice Assistant</h4>
+        <p>An AI voice assistant capable of web searching and basic tasks.</p>
+      </div>
+      <div class="project-card">
+        <h4>Object Detection</h4>
+        <p>Implemented object detection using OpenCV and deep learning models.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-card">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">dimpulkunagu963@email.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">https://www.linkedin.com/in/sanjana-kunagu-067214291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
+     <p>                                                       
+      </p>
+  <footer>
+   
+    <div class="contact-icons">
+      <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/your-profile"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/your-profile"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/your-profile"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
